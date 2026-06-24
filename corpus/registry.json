@@ -1,0 +1,31 @@
+{
+  "version": "2026-06-real-v1",
+  "normalization": "utf8-nfc-lf-trim",
+  "fragmentLength": 512,
+  "corpora": [
+    {
+      "id": "gutenberg-alice-11",
+      "license": "Project Gutenberg License; text not restricted by U.S. copyright according to Project Gutenberg terms",
+      "path": "corpus/snapshots/gutenberg-alice-11.txt",
+      "snapshotHash": "sha256:2f06af7f76258be7aa003e802d198d0f6a8a446828b63b955798cc46607a3c1c",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/11/pg11.txt",
+      "sourceName": "Alice's Adventures in Wonderland, Project Gutenberg ebook #11"
+    },
+    {
+      "id": "gutenberg-world-english-bible-8294",
+      "license": "World English Bible public domain text distributed through Project Gutenberg",
+      "path": "corpus/snapshots/gutenberg-world-english-bible-8294.txt",
+      "snapshotHash": "sha256:ae52d7d7eedf4424a8dcea6029c7a0da04a5d8ee9d96c985ab87f80334387cc8",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/8294/pg8294.txt",
+      "sourceName": "The World English Bible (WEB), Complete, Project Gutenberg ebook #8294"
+    },
+    {
+      "id": "tanzil-quran-simple-clean-v1.1",
+      "license": "Tanzil Quran text terms: verbatim copying/distribution permitted; source attribution and link to tanzil.net required; text changes not allowed",
+      "path": "corpus/snapshots/tanzil-quran-simple-clean-v1.1.txt",
+      "snapshotHash": "sha256:ea7947fd0a2a5bfb10a6a4f3f42637c7ecf4f631d40c61723939a6e9773fa8b1",
+      "sourceUrl": "https://tanzil.net/pub/download/index.php?quranType=simple-clean&outType=txt&agree=true",
+      "sourceName": "Tanzil Quran Simple Clean text, Version 1.1"
+    }
+  ]
+}

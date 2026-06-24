@@ -1,0 +1,28 @@
+{
+  "name": "public-corpus-replay-protection",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Security-first prototype for stateless API replay mitigation using deterministic public-corpus salt derivation and HMAC request signing.",
+  "scripts": {
+    "dev": "tsx src/serverless/dev.ts",
+    "demo:signed": "tsx scripts/demo-signed-request.ts",
+    "build": "tsc --noEmit",
+    "test": "vitest run --globals --environment node",
+    "test:coverage": "vitest run --globals --environment node --coverage --coverage.include=src/**/*.ts --coverage.exclude=src/types.ts --coverage.exclude=src/serverless/dev.ts",
+    "bench": "tsx scripts/benchmark.ts",
+    "docs:check": "tsx scripts/check-doc-links.ts",
+    "ci": "npm run build && npm run test && npm run docs:check"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.8",
+    "hono": "^4.6.16"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@vitest/coverage-v8": "^2.1.8",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

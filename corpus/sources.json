@@ -1,0 +1,35 @@
+{
+  "retrievedAt": "2026-06-04",
+  "normalization": "UTF-8 input, Unicode NFC, LF line endings, BOM removal, boundary trim only",
+  "notes": [
+    "Public corpus salt is deterministic data binding, not secret material.",
+    "The Tanzil snapshot is retained as a raw downloaded file and used with documented normalization only for deterministic hashing experiments.",
+    "For publication, cite upstream licenses and retrieval URLs rather than claiming ownership of corpus text."
+  ],
+  "sources": [
+    {
+      "id": "gutenberg-alice-11",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/11/pg11.txt",
+      "licenseUrl": "https://www.gutenberg.org/policy/license",
+      "termsSummary": "Project Gutenberg works may generally be reused under the Project Gutenberg License; copyright status varies by jurisdiction.",
+      "snapshotPath": "corpus/snapshots/gutenberg-alice-11.txt",
+      "normalizedSnapshotHash": "sha256:2f06af7f76258be7aa003e802d198d0f6a8a446828b63b955798cc46607a3c1c"
+    },
+    {
+      "id": "gutenberg-world-english-bible-8294",
+      "sourceUrl": "https://www.gutenberg.org/cache/epub/8294/pg8294.txt",
+      "licenseUrl": "https://worldenglish.bible/",
+      "termsSummary": "World English Bible is described by its publisher as public domain; this snapshot is the Project Gutenberg distribution.",
+      "snapshotPath": "corpus/snapshots/gutenberg-world-english-bible-8294.txt",
+      "normalizedSnapshotHash": "sha256:ae52d7d7eedf4424a8dcea6029c7a0da04a5d8ee9d96c985ab87f80334387cc8"
+    },
+    {
+      "id": "tanzil-quran-simple-clean-v1.1",
+      "sourceUrl": "https://tanzil.net/pub/download/index.php?quranType=simple-clean&outType=txt&agree=true",
+      "licenseUrl": "https://tanzil.net/docs/Text_License",
+      "termsSummary": "Tanzil permits verbatim copying/distribution of its Quran text with source attribution and link; changing the text is not allowed.",
+      "snapshotPath": "corpus/snapshots/tanzil-quran-simple-clean-v1.1.txt",
+      "normalizedSnapshotHash": "sha256:ea7947fd0a2a5bfb10a6a4f3f42637c7ecf4f631d40c61723939a6e9773fa8b1"
+    }
+  ]
+}
