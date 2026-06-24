@@ -9,7 +9,12 @@ function walk(dir: string): string[] {
 }
 
 const root = resolve(".");
-const files = [join(root, "README.md"), ...walk(join(root, "docs")).filter((file) => file.endsWith(".md"))];
+const readmePath = join(root, "README.md");
+const docsPath = join(root, "docs");
+const files = [
+  ...(existsSync(readmePath) ? [readmePath] : []),
+  ...(existsSync(docsPath) ? walk(docsPath).filter((file) => file.endsWith(".md")) : []),
+];
 const linkPattern = /\[[^\]]+\]\(([^)]+)\)/g;
 const missing: string[] = [];
 
